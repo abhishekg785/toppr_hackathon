@@ -22,5 +22,6 @@ Steps to run the project :
 
 Project Contains:
 
-1. battles.sql file for the database.
-2  Screenshots of the project showing the use of apis.
+1. Code for the project.
+2. battles.sql file for the database.
+3.  Screenshots of the project showing the use of apis.
