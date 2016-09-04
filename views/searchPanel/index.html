@@ -1,0 +1,47 @@
+<!--
+author : abhishek goswami
+abhishekg785@gmail.com
+github : abhishekg785
+
+index.html : main page of the app
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GOT : Search Panel</title>
+  <link href = 'css/main.css' type="text/css" rel = 'stylesheet'/>
+</head>
+<body>
+  <header>
+    <h1>Welcome <%= loggedUser %> :)</h1>
+    <a href="/auth/logout">Logout</a>
+  </header>
+  <!-- loader view -->
+  <div id = 'loader'>
+  </div>
+  <!-- form for searching the info according to name, region, year etc -->
+  <h3><span style="color:red">Note:</span>Search According to the options given below(radio buttons)</h3>
+  <form method="post" id = 'searchForm'>
+    <input type="text" id = 'queryString' required placeholder="Search by" /><br/>
+    <input type = 'radio' name = 'queryFor' value = 'name' />Name:
+    <input type = 'radio' name = 'queryFor' value = 'king' />King(Attacker):
+    <input type = 'radio' name = 'queryFor' value = 'region' />Region:
+    <input type = 'radio' name = 'queryFor' value = 'year' />Year:
+    <br/>
+    <input type="submit" name = 'submit' value = 'Search'/>
+  </form>
+  <hr/>
+  <!-- view for showing the data -->
+  <h3 style="color:red">Click on the battle for more info :)</h3>
+  <div id = 'dataView'>
+    <!-- view for showing battle names as the page loads -->
+    <ul id = 'battleNameView'>
+    </ul>
+    <!-- view to show data when a user clicks on a battle name -->
+    <div id = 'dataInfo'>
+    </div>
+  </div>
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script src = "js/main.js"></script>
+</body>
+</html>

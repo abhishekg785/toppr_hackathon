@@ -1,0 +1,46 @@
+body{
+  margin: 0px;
+  padding: 5px;
+}
+
+header{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#dataInfo{
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 60%;
+  display: none;
+}
+
+#battleNameView{
+  width: 30%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  list-style: none;
+}
+
+#battleNameView li{
+  cursor: pointer;
+  padding: 5px;
+}
+
+#battleNameView li:hover{
+  color: red;
+  border-left: 2px solid black;
+}
+
+#loader{
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  display: none;
+}
